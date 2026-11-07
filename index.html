@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="P. Pruthvi Raj — Backend Developer & Cybersecurity Enthusiast portfolio." />
+  <meta name="keywords" content="P. Pruthvi Raj, Backend Developer, Cybersecurity, Python, Node.js, Express, MongoDB, Software Engineer" />
+  <meta name="author" content="P. Pruthvi Raj" />
+  <meta name="theme-color" content="#060507" />
+
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="P. Pruthvi Raj | Backend Developer & Cybersecurity Enthusiast" />
+  <meta property="og:description" content="Backend systems, API security, and practical software engineering portfolio." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="P. Pruthvi Raj | Backend Developer & Cybersecurity Enthusiast" />
+  <meta name="twitter:description" content="Backend systems, API security, and practical software engineering portfolio." />
+  <meta name="twitter:image" content="assets/profile.jpg" />
+
+  <!-- Favicon in Wine Ruby & Noir -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23060507'/%3E%3Ctext x='50' y='66' font-family='sans-serif' font-size='50' font-weight='800' fill='%23e62052' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E" />
+
+  <title>P. Pruthvi Raj | Backend Developer & Cybersecurity Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Stylized "RAJ" Video-Inspired Intro Overlay -->
+  <aside id="intro-screen" class="intro-screen" aria-label="Intro splash animation">
+    <div class="intro-curtain"></div>
+    <div class="intro-center">
+      <div class="intro-laser-dot"></div>
+      <div class="intro-brand">
+        <div class="intro-monogram">
+          <svg class="intro-svg-logo" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="orbitGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff4d6d" />
+                <stop offset="100%" stop-color="#800e2b" />
+              </linearGradient>
+              <linearGradient id="rGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="100%" stop-color="#e62052" />
+              </linearGradient>
+            </defs>
+            <!-- Orbit Ellipse Ring -->
+            <ellipse cx="70" cy="70" rx="60" ry="25" transform="rotate(-30 70 70)" stroke="url(#orbitGlow)" stroke-width="6" stroke-linecap="round" stroke-dasharray="290 35"/>
+            <!-- Stylized Angled R Monogram -->
+            <path d="M46 32 H66 C80 32, 90 41, 87 54 C84 66, 73 72, 60 72 H50 L42 108 H30 L46 32 Z" fill="url(#rGlow)"/>
+            <path d="M52 44 H64 C70 44, 76 48, 74 54 C72 60, 66 63, 60 63 H50 L52 44 Z" fill="#060507"/>
+            <!-- Dynamic Leg of R -->
+            <path d="M58 72 L78 108 H64 L48 76 H56 Z" fill="#c9184a"/>
+          </svg>
+        </div>
+        <div class="intro-typography">
+          <span class="intro-title">RAJ</span>
+          <span class="intro-subtitle">ENGINEER & CYBERSECURITY</span>
+        </div>
+      </div>
+    </div>
+    <button class="intro-skip-btn" type="button" aria-label="Skip intro animation">SKIP ↗</button>
+  </aside>
+
+  <div class="noise"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Go to home">P<span>.</span>R</a>
+      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO INTERNSHIPS & PLACEMENT OPPORTUNITIES</p>
+        <h1>Backend Developer<br><span>& Cybersecurity</span><br>Engineer.</h1>
+        <p class="hero-text">
+          I design and build secure backend systems, API-driven applications, and practical software
+          solutions focused on reliability, performance, and real-world impact.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects <span>↗</span></a>
+          <a class="btn btn-ghost" href="resume.pdf" download id="resume-btn">Download Resume <span>↓</span></a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/pruthvi-raj-85b505401" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:pruthviraj69784@gmail.com">Email ↗</a>
+          <a href="tel:+917569738814">Call ↗</a>
+        </div>
+        <div class="hero-metrics" aria-label="Key profile metrics">
+          <div><strong>3+</strong><span>Years of learning</span></div>
+          <div><strong>4+</strong><span>Featured builds</span></div>
+          <div><strong>8+</strong><span>Hackathons</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Interactive smartphone showcase">
+        <div class="orb"></div>
+
+        <!-- Authentic Smartphone Device Shell -->
+        <div class="phone-device" id="hero-phone">
+          <!-- Physical Hardware Buttons -->
+          <div class="phone-btn phone-btn-action"></div>
+          <div class="phone-btn phone-btn-vol-up"></div>
+          <div class="phone-btn phone-btn-vol-down"></div>
+          <div class="phone-btn phone-btn-power"></div>
+
+          <!-- Phone Screen Container -->
+          <div class="phone-screen">
+            <!-- Glass Specular Reflection Sheen -->
+            <div class="phone-glare"></div>
+
+            <!-- Tech Scanline Animation -->
+            <div class="phone-scanline"></div>
+
+            <!-- Dynamic Island / Speaker Notch -->
+            <div class="phone-island">
+              <div class="island-camera"></div>
+              <div class="island-sensor"></div>
+            </div>
+
+            <!-- Top Status Bar -->
+            <div class="phone-status-bar">
+              <span class="status-time">09:41</span>
+              <div class="status-icons">
+                <span class="status-badge">SECURE</span>
+                <span class="status-signal">●●●●</span>
+                <span class="status-battery">100%</span>
+              </div>
+            </div>
+
+            <!-- Portrait Photo with Ken Burns Animation -->
+            <div class="portrait-wrapper">
+              <img src="assets/profile.jpg" alt="P. Pruthvi Raj portrait" class="portrait-img" />
+            </div>
+
+            <!-- Bottom Tech Terminal HUD Card -->
+            <div class="phone-hud">
+              <span class="hud-dot"></span>
+              <div class="hud-text">
+                <strong>P. PRUTHVI RAJ</strong>
+                <small>SYS_ADMIN • ENCRYPTED</small>
+              </div>
+            </div>
+
+            <!-- Home Swipe Gesture Indicator -->
+            <div class="phone-home-bar"></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-code">
+          <span>01</span>
+          <strong>BUILD</strong>
+          <small>Secure systems</small>
+        </div>
+        <div class="floating-card card-shield">
+          <span>◈</span>
+          <strong>SECURE</strong>
+          <small>Backend first</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technology highlights">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>PYTHON</span><b>•</b><span>NODE.JS</span><b>•</b><span>EXPRESS</span><b>•</b>
+          <span>MONGODB</span><b>•</b><span>MYSQL</span><b>•</b><span>CYBERSECURITY</span><b>•</b>
+          <span>REST APIS</span><b>•</b><span>DSA</span><b>•</b><span>GIT</span><b>•</b>
+          <span>POSTMAN</span><b>•</b><span>LINUX</span><b>•</b><span>DOCKER</span><b>•</b>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>PYTHON</span><b>•</b><span>NODE.JS</span><b>•</b><span>EXPRESS</span><b>•</b>
+          <span>MONGODB</span><b>•</b><span>MYSQL</span><b>•</b><span>CYBERSECURITY</span><b>•</b>
+          <span>REST APIS</span><b>•</b><span>DSA</span><b>•</b><span>GIT</span><b>•</b>
+          <span>POSTMAN</span><b>•</b><span>LINUX</span><b>•</b><span>DOCKER</span><b>•</b>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="about-grid">
+        <div>
+          <h2>Building with purpose,<br><em>learning by doing.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I'm <strong>P. Pruthvi Raj</strong>, a Computer Science student with a strong interest in
+            backend engineering, application security, and building products that solve real problems.
+          </p>
+          <p>
+            I enjoy turning ideas into reliable software — from authentication and secure file handling
+            to database-driven web systems. My focus is on creating solutions that are practical,
+            maintainable, and secure by design.
+          </p>
+          <div class="mini-stats">
+            <div><strong>2028</strong><span>Graduation</span></div>
+            <div><strong>04+</strong><span>Featured Builds</span></div>
+            <div><strong>08+</strong><span>Hackathons</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-dark">
+      <div class="container">
+        <div class="section-label">02 / WHAT I DO</div>
+        <div class="section-heading">
+          <h2>Building systems that are secure, fast, and practical.</h2>
+          <p>I focus on the backend foundations that make software reliable, scalable, and trustworthy in real-world use.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Backend Development</h3>
+            <p>Designing RESTful APIs, server-side logic, and solid application architecture for clean, functional products.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3>Application Security</h3>
+            <p>Implementing secure authentication, authorization, encryption practices, and protection against common API vulnerabilities.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Database & Logic</h3>
+            <p>Working with data models, persistence layers, and business logic to build robust, maintainable systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container why-choose-me">
+      <div class="section-label">03 / WHY ME</div>
+      <div class="section-heading">
+        <h2>Why I bring value to a team.</h2>
+        <p>I combine engineering fundamentals with a practical mindset — I care about building systems that work reliably and securely.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card reveal">
+          <span>01</span>
+          <h3>Problem-solving mindset</h3>
+          <p>I enjoy breaking down technical problems into clear, workable solutions and learning quickly in the process.</p>
+        </article>
+        <article class="value-card reveal">
+          <span>02</span>
+          <h3>Security-first thinking</h3>
+          <p>My focus is on building safer systems from the start rather than fixing issues only after they appear.</p>
+        </article>
+        <article class="value-card reveal">
+          <span>03</span>
+          <h3>Clean, maintainable code</h3>
+          <p>I value structure, readability, and scalable implementation choices that help teams move with confidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark approach">
+      <div class="container">
+        <div class="section-label">04 / APPROACH</div>
+        <div class="section-heading">
+          <h2>A disciplined process for building software.</h2>
+          <p>I work from requirements to implementation with a focus on structure, reliability, security, and continuous learning.</p>
+        </div>
+        <div class="approach-grid">
+          <article class="approach-card reveal">
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>Translate user needs and system requirements into practical design decisions before writing code.</p>
+          </article>
+          <article class="approach-card reveal">
+            <span>02</span>
+            <h3>Build</h3>
+            <p>Implement backend logic, data flows, and APIs with a clean structure that is easy to extend.</p>
+          </article>
+          <article class="approach-card reveal">
+            <span>03</span>
+            <h3>Secure</h3>
+            <p>Validate access controls, protect sensitive workflows, and build with secure defaults in mind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-label">05 / SKILLS</div>
+        <div class="section-heading">
+          <h2>My technical toolkit.</h2>
+          <p>Focused on building reliable backend systems while strengthening my fundamentals in security and software design.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-num">01</span>
+            <h3>Languages</h3>
+            <div class="skill-pills"><span>Python</span><span>JavaScript</span><span>PHP</span><span>C / C++</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-num">02</span>
+            <h3>Backend</h3>
+            <div class="skill-pills"><span>Node.js</span><span>Express.js</span><span>Flask</span><span>REST APIs</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-num">03</span>
+            <h3>Databases</h3>
+            <div class="skill-pills"><span>MongoDB</span><span>MySQL</span><span>Schema Design</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-num">04</span>
+            <h3>Security</h3>
+            <div class="skill-pills"><span>JWT</span><span>RBAC</span><span>AES-256</span><span>Bcrypt</span><span>API Security</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-num">05</span>
+            <h3>Core CS</h3>
+            <div class="skill-pills"><span>DSA</span><span>OOP</span><span>DBMS</span><span>Networks</span><span>OS</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-num">06</span>
+            <h3>Tools & DevOps</h3>
+            <div class="skill-pills"><span>Git</span><span>GitHub</span><span>Postman</span><span>Linux</span><span>VS Code</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-label">06 / PROJECTS</div>
+      <div class="section-heading projects-heading">
+        <div><h2>Selected work.</h2></div>
+        <p>Projects that reflect my approach to backend development, practical product building, and security-first thinking.</p>
+      </div>
+
+      <div class="projects">
+        <article class="project featured">
+          <div class="project-top"><span>01 — SECURITY / BACKEND</span><span>FLAGSHIP</span></div>
+          <div class="project-body">
+            <div>
+              <h3>SecureVault</h3>
+              <p>A secure file storage platform built with RESTful upload APIs, AES encryption saving each file's initialization vector (IV) with its encrypted data, and in-progress access control & client-side encryption.</p>
+            </div>
+            <div class="tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>AES-256 (IV)</span><span>REST APIs</span><span>API Security</span></div>
+          </div>
+          <div class="project-bottom"><span>Secure by design.</span><a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">View GitHub ↗</a></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top"><span>02 — MOBILE / BACKEND</span><span>PROJECT</span></div>
+          <div class="project-body">
+            <div>
+              <h3>JourneyVista</h3>
+              <p>Travel package booking app featuring customer trip booking, JWT authentication with role-based access (customer/admin), password hashing, account lockout after 5 failed attempts, and an admin management dashboard.</p>
+            </div>
+            <div class="tags"><span>Flutter</span><span>Flask</span><span>PostgreSQL</span><span>JWT Auth</span><span>Account Lockout</span></div>
+          </div>
+          <div class="project-bottom"><span>Built for resilience.</span><a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top"><span>03 — HEALTHCARE / FULL-STACK</span><span>PROJECT</span></div>
+          <div class="project-body">
+            <div>
+              <h3>Prescripto</h3>
+              <p>Full-stack healthcare booking platform enabling patients to schedule doctor appointments and order medicines online, equipped with a comprehensive doctor/order management admin panel. Deployed live.</p>
+            </div>
+            <div class="tags"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Live Deployed</span></div>
+          </div>
+          <div class="project-bottom"><span>Built for real impact.</span><a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+
+        <article class="project">
+          <div class="project-top"><span>04 — REAL-TIME / COMMERCE</span><span>PROJECT</span></div>
+          <div class="project-body">
+            <div>
+              <h3>BrewHub</h3>
+              <p>Cafe ordering platform with categorized menu browsing, cart & custom checkout instructions, user order history, and an admin portal with live Socket.io order notifications.</p>
+            </div>
+            <div class="tags"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Socket.io</span></div>
+          </div>
+          <div class="project-bottom"><span>Live order flows.</span><a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+      </div>
+      <p class="more-projects">More projects are coming — <a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">explore my GitHub ↗</a></p>
+    </section>
+
+    <section id="journey" class="section section-dark">
+      <div class="container">
+        <div class="section-label">07 / JOURNEY</div>
+        <div class="journey-grid">
+          <div>
+            <h2>Learning beyond<br><em>the classroom.</em></h2>
+            <p class="journey-intro">Hackathons and collaborative coding events have helped me sharpen my problem-solving, communication, and product-building skills under real constraints.</p>
+          </div>
+          <div class="events">
+            <div class="event"><span>01</span><strong>Smart India Hackathon (SIH)</strong><small>Hackathon participation</small></div>
+            <div class="event"><span>02</span><strong>HITAM College</strong><small>Hackathon participation</small></div>
+            <div class="event"><span>03</span><strong>Mohan Babu University</strong><small>Andhra Pradesh · Hackathon participation</small></div>
+            <div class="event"><span>04</span><strong>CMR College of Engineering & Technology</strong><small>Hackathon participation</small></div>
+            <div class="event"><span>05</span><strong>Vignan University</strong><small>Hackathon participation</small></div>
+            <div class="event"><span>06</span><strong>MedTech</strong><small>Andhra Pradesh · Hackathon participation</small></div>
+            <div class="event"><span>07</span><strong>TRR College of Technology</strong><small>Hackathon participation</small></div>
+            <div class="event"><span>08</span><strong>Global University & others</strong><small>Hackathon participation</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container education">
+      <div class="section-label">08 / EDUCATION</div>
+      <div class="education-card">
+        <div>
+          <span class="edu-year">GRADUATION: 2028 (EXPECTED)</span>
+          <h2>B.Tech — Computer Science & Engineering</h2>
+          <p>Teegala Ram Reddy Group of Institutions</p>
+          <div class="coursework">
+            <span>Core Studies:</span> Data Structures & Algorithms · Operating Systems · Database Management Systems (DBMS) · Computer Networks · OOP
+          </div>
+        </div>
+        <strong>B.Tech CSE</strong>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-inner">
+        <div class="section-label">09 / CONTACT</div>
+        <h2>Let's build something<br><em>worth talking about.</em></h2>
+        <p>I'm open to internships, placement opportunities, collaborations, and meaningful technical challenges.</p>
+        <div class="email-wrapper">
+          <a class="email-link" href="mailto:pruthviraj69784@gmail.com">pruthviraj69784@gmail.com ↗</a>
+          <button class="btn-copy-email" type="button" aria-label="Copy email address" title="Copy to clipboard">
+            <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="copy-status">Copy</span>
+          </button>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+917569738814">📞 +91 7569738814 ↗</a>
+          <a href="https://github.com/pruthviraj69784-alt" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/pruthvi-raj-85b505401" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© 2026 P. Pruthvi Raj</span>
+    <span>Built with intention.</span>
+  </footer>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

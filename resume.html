@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P. Pruthvi Raj — Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 10.5pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .resume-container {
+      width: 210mm;
+      min-height: 297mm;
+      display: flex;
+      margin: 0 auto;
+      background: #ffffff;
+    }
+    /* LEFT SIDEBAR */
+    .sidebar {
+      width: 34%;
+      background: #f7f9fa;
+      border-right: 1px solid #e2e8f0;
+      padding: 24mm 16mm 20mm 18mm;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .photo-wrap {
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 4px solid #800e2b;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .sidebar-section {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sidebar-title {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: #800e2b;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 4px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 8.8pt;
+      color: #334155;
+      word-break: break-all;
+    }
+    .contact-item a {
+      color: #1e293b;
+      text-decoration: none;
+    }
+    .skill-group {
+      margin-bottom: 6px;
+    }
+    .skill-label {
+      font-weight: 700;
+      font-size: 8.6pt;
+      color: #0f172a;
+      display: block;
+      margin-bottom: 1px;
+    }
+    .skill-val {
+      font-size: 8.4pt;
+      color: #475569;
+      line-height: 1.35;
+    }
+    .edu-school {
+      font-weight: 700;
+      font-size: 8.8pt;
+      color: #0f172a;
+    }
+    .edu-degree {
+      font-size: 8.4pt;
+      color: #334155;
+      margin-top: 1px;
+    }
+    .edu-date {
+      font-size: 8pt;
+      color: #64748b;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .interest-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .interest-list li {
+      font-size: 8.5pt;
+      color: #334155;
+      position: relative;
+      padding-left: 12px;
+    }
+    .interest-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #800e2b;
+      font-weight: bold;
+    }
+
+    /* RIGHT MAIN CONTENT */
+    .main-content {
+      width: 66%;
+      padding: 24mm 20mm 20mm 18mm;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-block {
+      border-bottom: 2px solid #800e2b;
+      padding-bottom: 12px;
+    }
+    .candidate-name {
+      font-size: 24pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .candidate-title {
+      font-size: 11pt;
+      color: #800e2b;
+      font-weight: 700;
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+    .main-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .main-section-title {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+    }
+    .summary-text {
+      font-size: 9pt;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .project-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-bottom: 6px;
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .project-name {
+      font-size: 9.8pt;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .project-subtitle {
+      font-size: 8.8pt;
+      color: #64748b;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+    .project-tech {
+      font-size: 8pt;
+      color: #800e2b;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .project-bullets {
+      list-style-type: disc;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .project-bullets li {
+      font-size: 8.6pt;
+      color: #334155;
+      line-height: 1.4;
+    }
+    .hackathon-text {
+      font-size: 8.8pt;
+      color: #334155;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- LEFT COLUMN -->
+    <aside class="sidebar">
+      <div class="photo-wrap">
+        <img src="assets/profile.jpg" alt="P. Pruthvi Raj" class="profile-photo" />
+      </div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Contact</h2>
+        <div class="contact-item">
+          <span>📞</span>
+          <a href="tel:+917569738814">+91 7569738814</a>
+        </div>
+        <div class="contact-item">
+          <span>✉️</span>
+          <a href="mailto:pruthviraj69784@gmail.com">pruthviraj69784@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>🐙</span>
+          <a href="https://github.com/pruthviraj69784-alt" target="_blank">github.com/pruthviraj69784-alt</a>
+        </div>
+        <div class="contact-item">
+          <span>💼</span>
+          <a href="https://linkedin.com/in/pruthvi-raj-85b505401" target="_blank">linkedin.com/in/pruthvi-raj-85b505401</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Technical Skills</h2>
+        <div class="skill-group">
+          <span class="skill-label">Languages</span>
+          <span class="skill-val">JavaScript, Python</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Backend</span>
+          <span class="skill-val">Node.js, Express.js, REST APIs, JWT Authentication</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Databases</span>
+          <span class="skill-val">MongoDB, PostgreSQL</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Tools</span>
+          <span class="skill-val">Git, GitHub, Postman, Docker, VS Code</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label">Fundamentals</span>
+          <span class="skill-val">Data Structures & Algorithms, OOP, DBMS, Computer Networks</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Education</h2>
+        <div class="edu-school">Teegala Ram Reddy Group of Institutions</div>
+        <div class="edu-degree">B.Tech, Computer Science and Engineering</div>
+        <div class="edu-date">Expected Graduation: 2028</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Interests</h2>
+        <ul class="interest-list">
+          <li>Backend Engineering</li>
+          <li>Application Security</li>
+          <li>API Security</li>
+          <li>Secure Software Development</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- RIGHT COLUMN -->
+    <main class="main-content">
+      <header class="header-block">
+        <h1 class="candidate-name">P. PRUTHVI RAJ</h1>
+        <p class="candidate-title">Backend Developer &nbsp;|&nbsp; Computer Science Undergraduate</p>
+      </header>
+
+      <section class="main-section">
+        <h2 class="main-section-title">Professional Summary</h2>
+        <p class="summary-text">
+          B.Tech CSE undergraduate focused on secure backend development with Node.js, Express.js, and REST APIs. Built a JWT-secured travel booking app with account lockout, a healthcare booking platform, a cafe ordering system, and an encrypted file storage service. Interested in application and API security.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-section-title">Projects</h2>
+
+        <!-- Project 1: SecureVault -->
+        <article class="project-item">
+          <div class="project-header">
+            <div>
+              <span class="project-name">SecureVault</span>
+              <span class="project-subtitle">| Secure File Storage Platform</span>
+            </div>
+          </div>
+          <div class="project-tech">Node.js · Express.js · MongoDB · AES-256</div>
+          <ul class="project-bullets">
+            <li>Built backend authentication and file upload REST APIs.</li>
+            <li>Implemented AES encryption for stored files, saving each file's initialization vector (IV) with its encrypted data.</li>
+            <li>Currently implementing access control, audit logging, and client-side encryption.</li>
+          </ul>
+        </article>
+
+        <!-- Project 2: JourneyVista -->
+        <article class="project-item">
+          <div class="project-header">
+            <div>
+              <span class="project-name">JourneyVista</span>
+              <span class="project-subtitle">| Travel Package Booking App</span>
+            </div>
+          </div>
+          <div class="project-tech">Flutter · Flask · PostgreSQL · JWT Authentication</div>
+          <ul class="project-bullets">
+            <li>Built a mobile app where customers browse travel packages and book trips with a travel date and traveler count.</li>
+            <li>Implemented JWT authentication with role-based access (customer/admin), input validation, password hashing, and account lockout after 5 failed login attempts.</li>
+            <li>Developed REST APIs for registration, login, packages, bookings, and booking history.</li>
+            <li>Built an admin panel with a dashboard, package and booking management, and user block/unblock/delete controls.</li>
+          </ul>
+        </article>
+
+        <!-- Project 3: Prescripto -->
+        <article class="project-item">
+          <div class="project-header">
+            <div>
+              <span class="project-name">Prescripto</span>
+              <span class="project-subtitle">| Healthcare Appointment & Medicine Booking</span>
+            </div>
+          </div>
+          <div class="project-tech">React · Node.js · Express.js · MongoDB</div>
+          <ul class="project-bullets">
+            <li>Built a full-stack platform where patients book doctor appointments and order medicines online.</li>
+            <li>Developed an admin panel to manage doctors, appointments, and medicine orders.</li>
+            <li>Deployed the application live.</li>
+          </ul>
+        </article>
+
+        <!-- Project 4: BrewHub -->
+        <article class="project-item">
+          <div class="project-header">
+            <div>
+              <span class="project-name">BrewHub</span>
+              <span class="project-subtitle">| Cafe Ordering Platform</span>
+            </div>
+          </div>
+          <div class="project-tech">React · Node.js · Express.js · MongoDB · Socket.io</div>
+          <ul class="project-bullets">
+            <li>Built an ordering platform with menu browsing by category, cart, checkout with special instructions, and order tracking.</li>
+            <li>Implemented email/password authentication, profile management, and order history.</li>
+            <li>Developed an admin dashboard for menu management and order status updates, with live notifications for new orders.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-section-title">Hackathons & Technical Events</h2>
+        <p class="hackathon-text">
+          Participated in Smart India Hackathon (SIH) and hackathons hosted by CMR College of Engineering and Technology, Vignan University, Mohan Babu University, and Global University.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
